@@ -98,6 +98,49 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+
+ul,
+ol {
+ list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+  font-size: 1.125em;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+
+address {
+  font-style: normal;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -105,7 +148,8 @@ textarea {
 
 /*-- Base Header-Footer Styles --*/
 
-header, footer {
+header,
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,11 +161,11 @@ header {
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
 .header-divider {
@@ -275,11 +319,11 @@ aside {
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0 0 0;
 }
 
 .faq h2 {
@@ -381,7 +425,6 @@ aside {
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
-  }
 
   /* General styles */
   .content-wrapper {
@@ -511,9 +554,14 @@ aside {
     .faq h2 {
       width: 100%;
     }
+  }
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
+
+  header {
+    padding: 15px 0;
+  }
 
   .content-wrapper {
     max-width: 960px;
@@ -564,6 +612,7 @@ aside {
   .faq h2 {
     width: 100%;
   }
+}
 
 /* ==========================================================================
    Print styles.
