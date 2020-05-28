@@ -111,17 +111,11 @@ body {
   text-align: left;
 }
 
-img {
-  width: 100%;
-}
-
-figure {
-  margin: 0;
-}
-
 ul,
 ol {
  list-style-type: none;
+ margin: 0;
+ padding: 0;
 }
 
 a {
@@ -133,6 +127,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
 }
 
 h3,
@@ -148,6 +143,14 @@ p {
   line-height: 1.285;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 address {
   font-style: normal;
 }
@@ -157,7 +160,7 @@ address {
   margin: 50px 0;
 }
 
-/*-- Base Header-Footer Styles --*/
+/* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
 footer {
@@ -318,7 +321,7 @@ input[type=button] {
 /* Features */
 
 .features {
-  background: url(../img/unplugged-retreat-features.jpg);
+  background: url('../img/unplugged-retreat-features.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -384,19 +387,19 @@ input[type=button] {
 }
 
 .map figure {
-    width: 100%;
-    height: 0;
-    padding-bottom: 80%;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
 }
 
 .map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .contact-section {
@@ -441,7 +444,7 @@ input[type=button] {
 }
 
 .faq-content h4 {
-    line-height: 1.333;
+  line-height: 1.333;
 }
 
 /* ==========================================================================
@@ -582,7 +585,7 @@ input[type=button] {
   /* Hero Area */
   .hero-area {
     min-height: 600px;
-}
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -619,6 +622,10 @@ input[type=button] {
 
   .features .features-item-description {
     width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /* Reviews */
@@ -672,7 +679,7 @@ input[type=button] {
     justify-content: space-between;
   }
 
-  footer .copywright {
+  footer .copyright {
     width: 100%;
   }
 
@@ -680,59 +687,56 @@ input[type=button] {
    About Page
    ========================================================================== */
 
-   .mission-content {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding-top: 20px;
-   }
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
 
-   .mission-content p {
-     width: 45%;
-   }
+  .mission-content p {
+    width: 45%;
+  }
 
-   .map figure {
-     padding-bottom: 45.5%
-   }
+  .map figure {
+    padding-bottom: 45.5%
+  }
 
-   .contact-section .content-wrapper h2 {
-     width: 80%;
-   }
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
 
-   .contact-content {
-     display: flex;
-     justify-content: space-between;
-     align-items: flex-start;
-   }
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-   .contact-content h4 {
-      font-size: 1.5em;
-   }
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
 
    /* ==========================================================================
     FAQ Page
     ========================================================================== */
 
-    .faq .content-wrapper {
-      justify-content: space-between;
-    }
-
-    .faq-content {
-      flex-basis: 45%;
-    }
-
-    .faq h2 {
-      width: 100%;
-      margin-bottom: 40px;
-      line-height: 1;
-    }
-
-    .faq h4, .faq p {
-      font-size: .875em;
-      line-height: 1.125;
-    }
-
+  .faq .content-wrapper {
+    justify-content: space-between;
   }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq h4, .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
+}
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
@@ -758,15 +762,7 @@ input[type=button] {
     line-height: 1.333;
   }
 
-  footer h4 {
-    font-size: 1.875em;
-  }
-
   /* Hero */
-  .hero-area {
-    min-height: 775px;
-  }
-
   .hero-area h1 {
     font-size: 3.75em;
     width: 80%;
@@ -789,7 +785,6 @@ input[type=button] {
   /* Features */
   .features h2 {
     width: 90%;
-    margin-bottom: 20px;
   }
 
   .features article {
@@ -817,7 +812,7 @@ input[type=button] {
     padding-bottom: 37.5%;
   }
 
-  .mission .content-wrapper h2,
+  .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
     font-size: 3em;
